@@ -1,0 +1,31 @@
+/**
+ * 功能
+ * 作者：mars
+ * 日期：2025/8/212:59
+ */
+package com.example.springboot.config;
+
+import org.neo4j.driver.AuthTokens;
+import org.neo4j.driver.Driver;
+import org.neo4j.driver.GraphDatabase;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class Neo4jDriverConfig {
+
+    @Value("${spring.neo4j.uri}")
+    private String uri;
+
+    @Value("${spring.neo4j.authentication.username}")
+    private String username;
+
+    @Value("${spring.neo4j.authentication.password}")
+    private String password;
+
+    @Bean
+    public Driver neo4jDriver() {
+        return GraphDatabase.driver(uri, AuthTokens.basic(username, password));
+    }
+}

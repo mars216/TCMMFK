@@ -1,0 +1,12 @@
+
+
+torch==1.10.2
+torchvision==0.11.3
+torchaudio==0.10.2
+
+torch-geometric==2.0.4
+Flask==2.0.3
+Flask-CORS==4.0.1
+python-docx==0.8.11
+requests==2.27.0
+neo4j==4.4.13
