@@ -1,20 +1,10 @@
-# vue
+https://github.com/mars216/TCMMFK.git
 
-## Project setup
-```
-npm install
-```
+# Project Setup
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 1. Get the Code
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-### 测试1111224
+```bash
+git clone <your-repo-url>
+cd <project-root>
+git lfs pull
